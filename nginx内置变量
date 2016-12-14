@@ -1,5 +1,7 @@
 nginx内置变量
-内置变量存放在  ngx_http_core_module 模块中，变量的命名方式和apache 服务器变量是一致的。总而言之，这些变量代表着客户端请求头的内容，例如$http_user_agent, $http_cookie, 等等。
+
+内置变量存放在  ngx_http_core_module 模块中，变量的命名方式和apache 服务器变量是一致的。总而言之，这些变量代表着客户端请求头的内容，
+例如$http_user_agent, $http_cookie, 等等。
 
 下面是nginx支持的所有内置变量：
 $arg_name 请求中的的参数名，即“?”后面的arg_name=arg_value形式的arg_name
@@ -99,3 +101,7 @@ $server_name                 1.0.8        请求到达的服务器名;
 $server_port                 1.0.8        请求到达的服务器端口号;
 $server_protocol             1.0.8        请求的协议版本，"HTTP/1.0"或"HTTP/1.1";
 $uri                         1.0.8        请求的URI，可能和最初的值有不同，比如经过重定向之类的。
+
+
+
+
