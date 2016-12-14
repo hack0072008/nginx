@@ -1,0 +1,13 @@
+nginx + lua 笔记
+
+
+lua自动加载参数：
+lua_code_cache off       //默认打开，开启缓存
+用在http, server, location, location if
+具体参考：https://github.com/openresty/lua-nginx-module#lua_code_cache
+
+nginx调用lua脚本：
+content_by_lua_file path/hello.lua    or content_by_lua_file /path/hello.lua
+
+
+
